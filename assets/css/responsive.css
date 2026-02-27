@@ -1,0 +1,436 @@
+/* Responsividade */
+
+/* Tablet Landscape (1024px e abaixo) */
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 var(--spacing-md);
+    }
+    
+    .area-content {
+        gap: var(--spacing-xl);
+    }
+    
+    .contact-container {
+        gap: var(--spacing-xl);
+    }
+    
+    /* Contact Section Responsivo */
+    .contact-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-hero-title {
+        font-size: 2rem;
+    }
+    
+    .social-buttons {
+        flex-wrap: wrap;
+    }
+    
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Tablet Portrait (768px e abaixo) */
+@media (max-width: 768px) {
+    /* Navigation */
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 300px;
+        height: 100vh;
+        background: rgba(15, 23, 42, 0.98);
+        backdrop-filter: blur(20px);
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: var(--spacing-2xl);
+        gap: var(--spacing-lg);
+        transition: right var(--transition-base);
+        box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
+        z-index: 1000;
+    }
+    
+    .nav-menu.active {
+        right: 0;
+    }
+    
+    .hamburger {
+        display: flex;
+    }
+    
+    /* Hero */
+    .hero-title {
+        font-size: clamp(2rem, 10vw, 3rem);
+    }
+    
+    .hero-description {
+        font-size: 1.1rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .btn {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    /* Areas */
+    .area-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+    }
+    
+    .area-content.reverse {
+        direction: ltr;
+    }
+    
+    .area-visual {
+        order: -1;
+    }
+    
+    .visual-stats {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Projetos */
+    .projetos-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Case Study Tablet */
+    .case-study,
+    .case-study-reverse {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+    }
+    
+    .case-study-reverse .case-study-image,
+    .case-study-reverse .case-study-content {
+        order: unset;
+    }
+    
+    .webdev-overview {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Contact */
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-visual {
+        order: -1;
+    }
+    
+    /* Contact Section Tablet */
+    .contact-cards {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+    
+    .contact-hero {
+        margin-bottom: var(--spacing-2xl);
+    }
+    
+    .response-badge {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    /* Tech Grid */
+    .tech-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Footer */
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+    }
+    
+    /* Section Titles */
+    .section-title {
+        font-size: clamp(1.75rem, 8vw, 2.5rem);
+    }
+}
+
+/* Mobile (480px e abaixo) */
+@media (max-width: 480px) {
+    :root {
+        --spacing-xs: 0.375rem;
+        --spacing-sm: 0.75rem;
+        --spacing-md: 1rem;
+        --spacing-lg: 1.5rem;
+        --spacing-xl: 2rem;
+        --spacing-2xl: 2.5rem;
+        --spacing-3xl: 3rem;
+    }
+    
+    .container {
+        padding: 0 var(--spacing-sm);
+    }
+    
+    .navbar {
+        padding: var(--spacing-sm) 0;
+    }
+    
+    .logo {
+        font-size: 1.5rem;
+    }
+    
+    .hero-content {
+        padding: var(--spacing-xl) var(--spacing-sm);
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-description {
+        font-size: 1rem;
+    }
+    
+    .section {
+        padding: var(--spacing-2xl) 0;
+    }
+    
+    .section-header {
+        margin-bottom: var(--spacing-xl);
+    }
+    
+    .section-title {
+        font-size: 1.75rem;
+    }
+    
+    .section-description {
+        font-size: 1rem;
+    }
+    
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+    
+    .area-info h3 {
+        font-size: 1.75rem;
+    }
+    
+    .area-features {
+        gap: var(--spacing-sm);
+    }
+    
+    .area-features li {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .visual-card {
+        padding: var(--spacing-lg);
+    }
+    
+    /* Case Study Responsivo */
+    .case-study,
+    .case-study-reverse {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+        padding: var(--spacing-lg);
+    }
+    
+    .case-study-reverse .case-study-image,
+    .case-study-reverse .case-study-content {
+        order: unset;
+    }
+    
+    .case-title {
+        font-size: 1.5rem;
+    }
+    
+    .case-description {
+        font-size: 0.95rem;
+    }
+    
+    .btn-case-study {
+        width: 100%;
+        justify-content: center;
+        padding: 0.875rem 1.5rem;
+    }
+    
+    /* Carousel Responsivo */
+    .carousel-btn {
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 1.25rem;
+    }
+    
+    .carousel-prev {
+        left: 0.5rem;
+    }
+    
+    .carousel-next {
+        right: 0.5rem;
+    }
+    
+    .carousel-indicators {
+        bottom: 1rem;
+    }
+    
+    .indicator {
+        width: 0.4rem;
+        height: 0.4rem;
+    }
+    
+    .indicator.active {
+        width: 1.25rem;
+    }
+    
+    .image-badge {
+        font-size: 0.65rem;
+        padding: 0.375rem 0.75rem;
+    }
+    
+    /* Web Dev Overview Responsivo */
+    .webdev-overview {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+        padding: var(--spacing-lg);
+    }
+    
+    .overview-title {
+        font-size: 1.5rem;
+    }
+    
+    .overview-metrics {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+    
+    .metric-number {
+        font-size: 2rem;
+    }
+    
+    /* Contact Section Mobile */
+    .contact-hero-title {
+        font-size: 1.75rem;
+    }
+    
+    .contact-hero-description {
+        font-size: 1rem;
+    }
+    
+    .contact-cards {
+        gap: var(--spacing-md);
+    }
+    
+    .contact-card {
+        padding: var(--spacing-lg);
+    }
+    
+    .contact-card-icon {
+        width: 56px;
+        height: 56px;
+    }
+    
+    .contact-card-value {
+        font-size: 1.125rem;
+    }
+    
+    .social-buttons {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+    
+    .social-button {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .response-badge {
+        padding: var(--spacing-md);
+    }
+    
+    .scroll-top {
+        bottom: 1rem;
+        right: 1rem;
+        width: 44px;
+        height: 44px;
+    }
+    
+    .floating-element {
+        display: none;
+    }
+}
+
+/* Landscape Mobile */
+@media (max-height: 600px) and (orientation: landscape) {
+    .hero {
+        min-height: auto;
+        padding: 8rem 0 4rem;
+    }
+    
+    .section {
+        padding: var(--spacing-xl) 0;
+    }
+}
+
+/* Reduce Motion */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    .floating-element {
+        animation: none;
+    }
+    
+    .hero {
+        animation: none;
+    }
+}
+
+/* High Contrast */
+@media (prefers-contrast: high) {
+    :root {
+        --shadow-sm: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+        --shadow-md: 0 4px 8px -1px rgba(0, 0, 0, 0.3);
+        --shadow-lg: 0 10px 20px -3px rgba(0, 0, 0, 0.3);
+    }
+    
+    .btn-outline {
+        border-width: 3px;
+    }
+    
+    .glass,
+    .glass-dark {
+        border-width: 2px;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .header,
+    .hamburger,
+    .floating-element,
+    .scroll-top,
+    .btn,
+    .footer {
+        display: none !important;
+    }
+    
+    .section {
+        page-break-inside: avoid;
+    }
+    
+    body {
+        background: white;
+        color: black;
+    }
+}

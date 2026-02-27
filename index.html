@@ -1,177 +1,589 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfólio de Projetos - Alttabcorp - Soluções em Desenvolvimento Web">
-    <title>Alttabcorp | Portfólio de Projetos</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <meta name="description" content="Alttabcorp - Empresa de Tecnologia especializada em Game Dev, Esports, Modelagem 3D, Desenvolvimento Web e Consultoria. Conheça nosso portfólio.">
+    <meta name="keywords" content="alttabcorp, game development, esports, 3D, desenvolvimento web, consultoria TI, tecnologia">
+    <meta name="author" content="Alttabcorp">
+    <title>Alttabcorp | Tecnologia, Games e Inovação Digital</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/sections.css">
+    <link rel="stylesheet" href="assets/css/footer-utils.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 <body>
-    <!-- Header/Navegação -->
+    <!-- Loading -->
+    <div class="loading">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Header -->
     <header class="header">
-        <nav class="navbar">
-            <div class="container">
-                <div class="logo">
-                    <h1>Alttabcorp</h1>
-                </div>
-                <ul class="nav-menu">
-                    <li><a href="#home">Início</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
-                    <li><a href="#tecnologias">Tecnologias</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+        <nav class="navbar container">
+            <div class="logo">Alttabcorp</div>
+            <ul class="nav-menu">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#gamedev">Game Dev</a></li>
+                <li><a href="#esports">Esports</a></li>
+                <li><a href="#3d">3D</a></li>
+                <li><a href="#webdev">Web Dev</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </nav>
     </header>
 
-    <!-- Seção Hero -->
+    <!-- Hero Section -->
     <section id="home" class="hero">
+        <!-- Floating Elements -->
+        <div class="floating-element floating-1"></div>
+        <div class="floating-element floating-2"></div>
+        <div class="floating-element floating-3"></div>
+        
         <div class="container">
             <div class="hero-content">
-                <h2 class="hero-title">Soluções Inovadoras</h2>
-                <h3 class="hero-subtitle">Desenvolvimento Web & Tecnologia</h3>
+                <div class="hero-badge">
+                    <span>✨</span>
+                    <span>Tecnologia & Inovação</span>
+                </div>
+                <h1 class="hero-title">
+                    Transformando Ideias em
+                    <span class="gradient-text">Realidade Digital</span>
+                </h1>
                 <p class="hero-description">
-                    Conheça nossos projetos e soluções tecnológicas que fazem a diferença
+                    Empresa de tecnologia com expertise em Game Development, Esports, Modelagem 3D,
+                    Desenvolvimento Web e Consultoria. De jogos a plataformas corporativas.
                 </p>
-                <a href="#projetos" class="btn btn-primary">Ver Projetos</a>
+                <div class="hero-buttons">
+                    <a href="#gamedev" class="btn btn-primary">
+                        <span>Explorar Vertentes</span>
+                        <span>→</span>
+                    </a>
+                    <a href="#sobre" class="btn btn-outline">
+                        <span>Sobre Nós</span>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Seção Sobre -->
+    <!-- Sobre Section -->
     <section id="sobre" class="section sobre">
         <div class="container">
-            <h2 class="section-title">Sobre Nós</h2>
-            <div class="sobre-content">
-                <p>
-                    A Alttabcorp desenvolve soluções tecnológicas inovadoras e escaláveis.
-                    Este portfólio apresenta nossos principais projetos, demonstrando nossa
-                    expertise em desenvolvimento web e capacidade de entregar resultados excepcionais.
+            <div class="section-header">
+                <span class="section-badge">Sobre Nós</span>
+                <h2 class="section-title">Quem Somos</h2>
+                <p class="section-description">
+                    Empresa de tecnologia com múltiplas áreas de atuação
                 </p>
             </div>
-        </div>
-    </section>
+            
+            <div class="sobre-content">
+                <p class="sobre-text">
+                    A <strong>Alttabcorp</strong> é uma empresa de tecnologia que atua em diversas frentes: 
+                    <strong>desenvolvimento de jogos</strong>, <strong>esports competitivo</strong>, 
+                    <strong>modelagem 3D</strong>, <strong>desenvolvimento web</strong> e 
+                    <strong>consultoria em TI</strong>. Nosso ecossistema integrado permite entregar 
+                    soluções completas e inovadoras.
+                </p>
 
-    <!-- Seção Projetos -->
-    <section id="projetos" class="section projetos">
-        <div class="container">
-            <h2 class="section-title">Nossos Projetos</h2>
-            <div class="projetos-grid">
-                <!-- Card de Projeto 1 -->
-                <div class="projeto-card">
-                    <div class="projeto-image">
-                        <img src="https://via.placeholder.com/400x300" alt="Projeto 1">
-                    </div>
-                    <div class="projeto-info">
-                        <h3>Nome do Projeto 1</h3>
-                        <p>Descrição breve do projeto desenvolvido.</p>
-                        <div class="projeto-tags">
-                            <span class="tag">HTML</span>
-                            <span class="tag">CSS</span>
-                            <span class="tag">JavaScript</span>
-                        </div>
-                        <a href="#" class="btn btn-secondary">Ver Detalhes</a>
-                    </div>
-                </div>
-
-                <!-- Card de Projeto 2 -->
-                <div class="projeto-card">
-                    <div class="projeto-image">
-                        <img src="https://via.placeholder.com/400x300" alt="Projeto 2">
-                    </div>
-                    <div class="projeto-info">
-                        <h3>Nome do Projeto 2</h3>
-                        <p>Descrição breve do projeto desenvolvido.</p>
-                        <div class="projeto-tags">
-                            <span class="tag">React</span>
-                            <span class="tag">Node.js</span>
-                        </div>
-                        <a href="#" class="btn btn-secondary">Ver Detalhes</a>
-                    </div>
-                </div>
-
-                <!-- Card de Projeto 3 -->
-                <div class="projeto-card">
-                    <div class="projeto-image">
-                        <img src="https://via.placeholder.com/400x300" alt="Projeto 3">
-                    </div>
-                    <div class="projeto-info">
-                        <h3>Nome do Projeto 3</h3>
-                        <p>Descrição breve do projeto desenvolvido.</p>
-                        <div class="projeto-tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">Django</span>
-                        </div>
-                        <a href="#" class="btn btn-secondary">Ver Detalhes</a>
+                <div class="tech-stack-compact">
+                    <h4 style="font-size: 0.875rem; font-weight: 600; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 1rem;">Stack de Produção</h4>
+                    <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                        <span class="stack-badge">React</span>
+                        <span class="stack-badge">Node.js</span>
+                        <span class="stack-badge">TypeScript</span>
+                        <span class="stack-badge">PostgreSQL</span>
+                        <span class="stack-badge">AWS</span>
+                        <span class="stack-badge">Docker</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Seção Tecnologias -->
-    <section id="tecnologias" class="section tecnologias">
+    <!-- Game Development Section -->
+    <section id="gamedev" class="section area-gamedev">
         <div class="container">
-            <h2 class="section-title">Tecnologias Utilizadas</h2>
-            <div class="tech-grid">
-                <div class="tech-item">
-                    <h3>Frontend</h3>
-                    <ul>
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>JavaScript</li>
-                        <li>React</li>
-                    </ul>
+            <div class="section-header">
+                <span class="section-badge">🎮 Game Development</span>
+                <h2 class="section-title">Alttab Studio</h2>
+                <p class="section-description">
+                    Desenvolvimento de jogos e conteúdo interativo
+                </p>
+            </div>
+
+            <!-- Layout Showcase Profissional -->
+            <div class="showcase-container">
+                
+                <!-- Case Study: Alttab Studio -->
+                <div class="case-study">
+                    <div class="case-study-image">
+                        <div class="carousel" data-carousel="studio">
+                            <div class="carousel-track">
+                                <div class="carousel-slide active">
+                                    <img src="https://via.placeholder.com/800x600/1e293b/60a5fa?text=Alttab+Studio+Home" alt="Alttab Studio - Home">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="https://via.placeholder.com/800x600/1e293b/60a5fa?text=Alttab+Studio+Projects" alt="Alttab Studio - Projetos">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="https://via.placeholder.com/800x600/1e293b/60a5fa?text=Alttab+Studio+About" alt="Alttab Studio - Sobre">
+                                </div>
+                            </div>
+                            <button class="carousel-btn carousel-prev" aria-label="Anterior">‹</button>
+                            <button class="carousel-btn carousel-next" aria-label="Próximo">›</button>
+                            <div class="carousel-indicators">
+                                <span class="indicator active" data-slide="0"></span>
+                                <span class="indicator" data-slide="1"></span>
+                                <span class="indicator" data-slide="2"></span>
+                            </div>
+                            <div class="image-badge">Desktop & Mobile</div>
+                        </div>
+                    </div>
+                    <div class="case-study-content">
+                        <div class="case-label">Game Development Studio</div>
+                        <h3 class="case-title">Alttab Studio</h3>
+                        <p class="case-description">
+                            Portal institucional completo para estúdio de desenvolvimento de jogos.
+                            Apresentação de projetos em andamento com design imersivo e experiência
+                            otimizada para engajar publishers e investidores.
+                        </p>
+                        <a href="https://alttabcorp.github.io/Alttab-studio/" target="_blank" class="btn-case-study">
+                            <span>Ver Projeto ao Vivo</span>
+                            <span class="arrow">→</span>
+                        </a>
+                    </div>
                 </div>
-                <div class="tech-item">
-                    <h3>Backend</h3>
-                    <ul>
-                        <li>Node.js</li>
-                        <li>Python</li>
-                        <li>Express</li>
-                        <li>Django</li>
-                    </ul>
+
+                <!-- Case Study: Animation MVP -->
+                <div class="case-study case-study-reverse">
+                    <div class="case-study-image">
+                        <div class="carousel" data-carousel="animation">
+                            <div class="carousel-track">
+                                <div class="carousel-slide active">
+                                    <img src="https://via.placeholder.com/800x600/312e81/60a5fa?text=Animation+Interface" alt="Animation - Interface">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="https://via.placeholder.com/800x600/312e81/60a5fa?text=Animation+Demo" alt="Animation - Demo">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="https://via.placeholder.com/800x600/312e81/60a5fa?text=Animation+Details" alt="Animation - Detalhes">
+                                </div>
+                            </div>
+                            <button class="carousel-btn carousel-prev" aria-label="Anterior">‹</button>
+                            <button class="carousel-btn carousel-next" aria-label="Próximo">›</button>
+                            <div class="carousel-indicators">
+                                <span class="indicator active" data-slide="0"></span>
+                                <span class="indicator" data-slide="1"></span>
+                                <span class="indicator" data-slide="2"></span>
+                            </div>
+                            <div class="image-badge">Interactive Demo</div>
+                        </div>
+                    </div>
+                    <div class="case-study-content">
+                        <div class="case-label">Animation Showcase</div>
+                        <h3 class="case-title">MVP Character Animation</h3>
+                        <p class="case-description">
+                            Demonstração técnica de capacidades avançadas de animação web.
+                            Interface interativa com animações fluidas de personagem,
+                            showcasing expertise em CSS animations e JavaScript interactions.
+                        </p>
+                        <a href="https://alttabcorp.github.io/MVP-Edit-Animation-Orrn-league_of_legends-/" target="_blank" class="btn-case-study">
+                            <span>Ver Demo Interativa</span>
+                            <span class="arrow">→</span>
+                        </a>
+                    </div>
                 </div>
-                <div class="tech-item">
-                    <h3>Ferramentas</h3>
-                    <ul>
-                        <li>Git</li>
-                        <li>VS Code</li>
-                        <li>Figma</li>
-                        <li>Postman</li>
-                    </ul>
+
+                <!-- Case Study: Streaming Platform -->
+                <div class="case-study">
+                    <div class="case-study-image">
+                        <div class="carousel" data-carousel="streaming">
+                            <div class="carousel-track">
+                                <div class="carousel-slide active">
+                                    <img src="https://via.placeholder.com/800x600/1e1b4b/60a5fa?text=Streaming+Home" alt="Stream - Home">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="https://via.placeholder.com/800x600/1e1b4b/60a5fa?text=Streaming+Player" alt="Stream - Player">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="https://via.placeholder.com/800x600/1e1b4b/60a5fa?text=Streaming+Browse" alt="Stream - Browse">
+                                </div>
+                            </div>
+                            <button class="carousel-btn carousel-prev" aria-label="Anterior">‹</button>
+                            <button class="carousel-btn carousel-next" aria-label="Próximo">›</button>
+                            <div class="carousel-indicators">
+                                <span class="indicator active" data-slide="0"></span>
+                                <span class="indicator" data-slide="1"></span>
+                                <span class="indicator" data-slide="2"></span>
+                            </div>
+                            <div class="image-badge">Live Streaming</div>
+                        </div>
+                    </div>
+                    <div class="case-study-content">
+                        <div class="case-label">Streaming Platform</div>
+                        <h3 class="case-title">Bodescorp Stream</h3>
+                        <p class="case-description">
+                            Plataforma de streaming otimizada para conteúdo de games.
+                            Interface clean para consumo de transmissões ao vivo com
+                            experiência de usuário focada em retenção e engajamento.
+                        </p>
+                        <a href="https://alttabcorp.github.io/bodescorp_stream/" target="_blank" class="btn-case-study">
+                            <span>Ver Plataforma</span>
+                            <span class="arrow">→</span>
+                        </a>
+                    </div>
                 </div>
+                
             </div>
         </div>
     </section>
 
-    <!-- Seção Contato -->
-    <section id="contato" class="section contato">
+    <!-- Esports Section -->
+    <section id="esports" class="section area-esports">
         <div class="container">
-            <h2 class="section-title">Entre em Contato</h2>
-            <div class="contato-content">
-                <p>Para mais informações sobre nossos projetos:</p>
-                <a href="https://www.alttabcorp.com.br/" target="_blank" class="btn btn-primary">
-                    Visite Alttabcorp
+            <div class="section-header">
+                <span class="section-badge">🏆 Esports</span>
+                <h2 class="section-title">Alttab Esports</h2>
+                <p class="section-description">
+                    Time competitivo e gestão de eventos
+                </p>
+            </div>
+
+            <!-- Layout Showcase Profissional -->
+            <div class="showcase-container">
+                
+                <!-- Case Study: Alttab Esports -->
+                <div class="case-study case-study-reverse">
+                    <div class="case-study-image">
+                        <div class="carousel" data-carousel="esports">
+                            <div class="carousel-track">
+                                <div class="carousel-slide active">
+                                    <img src="https://via.placeholder.com/800x600/0f172a/60a5fa?text=Esports+Home" alt="Esports - Home">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="https://via.placeholder.com/800x600/0f172a/60a5fa?text=Esports+Team" alt="Esports - Time">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="https://via.placeholder.com/800x600/0f172a/60a5fa?text=Esports+Results" alt="Esports - Resultados">
+                                </div>
+                            </div>
+                            <button class="carousel-btn carousel-prev" aria-label="Anterior">‹</button>
+                            <button class="carousel-btn carousel-next" aria-label="Próximo">›</button>
+                            <div class="carousel-indicators">
+                                <span class="indicator active" data-slide="0"></span>
+                                <span class="indicator" data-slide="1"></span>
+                                <span class="indicator" data-slide="2"></span>
+                            </div>
+                            <div class="image-badge">Full Platform</div>
+                        </div>
+                    </div>
+                    <div class="case-study-content">
+                        <div class="case-label">Esports Management</div>
+                        <h3 class="case-title">Alttab Esports</h3>
+                        <p class="case-description">
+                            Portal institucional completo para gestão do time de esports.
+                            Apresenta atletas, resultados de competições, notícias e calendário.
+                            Plataforma desenvolvida para engajar fãs e atrair patrocinadores.
+                        </p>
+                        <a href="https://alttabcorp.github.io/Alttab-Esports-/" target="_blank" class="btn-case-study">
+                            <span>Ver Portal Esports</span>
+                            <span class="arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- 3D Section -->
+    <section id="3d" class="section area-3d">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">🎨 Modelagem 3D</span>
+                <h2 class="section-title">Alttab 3D</h2>
+                <p class="section-description">
+                    Serviços de modelagem 3D e orçamento automatizado
+                </p>
+            </div>
+
+            <!-- Layout Showcase Profissional -->
+            <div class="showcase-container">
+                
+                <!-- Case Study: Orçamento 3D -->
+                <div class="case-study">
+                    <div class="case-study-image">
+                        <div class="carousel" data-carousel="budget">
+                            <div class="carousel-track">
+                                <div class="carousel-slide active">
+                                    <img src="https://via.placeholder.com/800x600/164e63/60a5fa?text=3D+Budget+Form" alt="3D - Formulário">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="https://via.placeholder.com/800x600/164e63/60a5fa?text=3D+Budget+Calculator" alt="3D - Calculadora">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="https://via.placeholder.com/800x600/164e63/60a5fa?text=3D+Budget+Result" alt="3D - Resultado">
+                                </div>
+                            </div>
+                            <button class="carousel-btn carousel-prev" aria-label="Anterior">‹</button>
+                            <button class="carousel-btn carousel-next" aria-label="Próximo">›</button>
+                            <div class="carousel-indicators">
+                                <span class="indicator active" data-slide="0"></span>
+                                <span class="indicator" data-slide="1"></span>
+                                <span class="indicator" data-slide="2"></span>
+                            </div>
+                            <div class="image-badge">Automation System</div>
+                        </div>
+                    </div>
+                    <div class="case-study-content">
+                        <div class="case-label">Business Automation</div>
+                        <h3 class="case-title">WEB Orçamento 3D</h3>
+                        <p class="case-description">
+                            Sistema web inteligente para cotação automática de serviços de modelagem 3D.
+                            Calcula valores em tempo real baseado em parâmetros do projeto,
+                            reduzindo tempo de resposta ao cliente e aumentando taxa de conversão.
+                        </p>
+                        <a href="https://alttabcorp.github.io/WEB-Orcamento3D-alttab/" target="_blank" class="btn-case-study">
+                            <span>Testar Sistema</span>
+                            <span class="arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Web Development Section -->
+    <section id="webdev" class="section area-webdev">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">💻 Desenvolvimento Web</span>
+                <h2 class="section-title">Nossas Plataformas Web</h2>
+                <p class="section-description">
+                    Todos os sites e sistemas desenvolvidos pela equipe
+                </p>
+            </div>
+
+            <!-- Layout Showcase - Web Development Summary -->
+            <div class="showcase-container">
+                
+                <!-- Overview Card -->
+                <div class="webdev-overview">
+                    <div class="overview-content">
+                        <h3 class="overview-title">Ecossistema Digital Integrado</h3>
+                        <p class="overview-description">
+                            Desenvolvemos e mantemos toda a infraestrutura digital da Alttabcorp.
+                            Cada plataforma demonstrada neste portfólio foi criada internamente,
+                            refletindo nossa expertise em desenvolvimento web full-stack e nossa
+                            capacidade de entregar soluções completas end-to-end.
+                        </p>
+                        <div class="overview-metrics">
+                            <div class="metric">
+                                <div class="metric-number">6+</div>
+                                <div class="metric-label">Plataformas Ativas</div>
+                            </div>
+                            <div class="metric">
+                                <div class="metric-number">100%</div>
+                                <div class="metric-label">In-House Development</div>
+                            </div>
+                            <div class="metric">
+                                <div class="metric-number">24/7</div>
+                                <div class="metric-label">Uptime Garantido</div>
+                            </div>
+                        </div>
+                        <div class="overview-features">
+                            <div class="feature-badge">✓ Design Responsivo</div>
+                            <div class="feature-badge">✓ Performance Otimizada</div>
+                            <div class="feature-badge">✓ SEO Integrado</div>
+                            <div class="feature-badge">✓ Documentação Completa</div>
+                            <div class="feature-badge">✓ Manutenção Contínua</div>
+                            <div class="feature-badge">✓ Escalabilidade</div>
+                        </div>
+                    </div>
+                    <div class="overview-visual">
+                        <img src="https://via.placeholder.com/600x400/0f172a/60a5fa?text=Web+Development" alt="Desenvolvimento Web">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato Section -->
+    <section id="contato" class="section contact-section">
+        <div class="container">
+            
+            <!-- Contact Hero -->
+            <div class="contact-hero">
+                <div class="contact-hero-content">
+                    <span class="section-badge">Vamos Conversar</span>
+                    <h2 class="contact-hero-title">
+                        Pronto para Transformar
+                        <span class="gradient-text">Sua Ideia em Realidade?</span>
+                    </h2>
+                    <p class="contact-hero-description">
+                        Entre em contato conosco para discutir seu projeto. Nossa equipe está 
+                        pronta para entregar soluções inovadoras e de alta qualidade para seu negócio.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Contact Cards -->
+            <div class="contact-cards">
+                
+                <!-- Email Card -->
+                <a href="mailto:alttabcorp@gmail.com" class="contact-card contact-card-primary">
+                    <div class="contact-card-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                    </div>
+                    <div class="contact-card-content">
+                        <h3 class="contact-card-title">Email Comercial</h3>
+                        <p class="contact-card-value">alttabcorp@gmail.com</p>
+                        <span class="contact-card-action">Enviar Mensagem →</span>
+                    </div>
                 </a>
+
+                <!-- Website Card -->
+                <a href="https://www.alttabcorp.com.br/" target="_blank" class="contact-card">
+                    <div class="contact-card-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <line x1="2" y1="12" x2="22" y2="12"/>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                        </svg>
+                    </div>
+                    <div class="contact-card-content">
+                        <h3 class="contact-card-title">Website Corporativo</h3>
+                        <p class="contact-card-value">www.alttabcorp.com.br</p>
+                        <span class="contact-card-action">Visitar Site →</span>
+                    </div>
+                </a>
+
+                <!-- LinkedIn Card -->
+                <a href="https://www.linkedin.com/company/alttab-corp" target="_blank" class="contact-card">
+                    <div class="contact-card-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </div>
+                    <div class="contact-card-content">
+                        <h3 class="contact-card-title">LinkedIn</h3>
+                        <p class="contact-card-value">Conecte-se Conosco</p>
+                        <span class="contact-card-action">Ver Perfil →</span>
+                    </div>
+                </a>
+
             </div>
+
+            <!-- Social Links -->
+            <div class="contact-social">
+                <p class="social-label">Também estamos em:</p>
+                <div class="social-buttons">
+                    <a href="https://github.com/Alttabcorp" target="_blank" class="social-button" title="GitHub" aria-label="GitHub">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://www.instagram.com/alttabcorp" target="_blank" class="social-button" title="Instagram" aria-label="Instagram">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                        <span>Instagram</span>
+                    </a>
+                    <a href="https://www.facebook.com/AlttabCorp/" target="_blank" class="social-button" title="Facebook" aria-label="Facebook">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
+                        </svg>
+                        <span>Facebook</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Response Time Badge -->
+            <div class="response-badge">
+                <div class="response-icon">⚡</div>
+                <div class="response-text">
+                    <strong>Resposta em até 24h</strong>
+                    <span>Atendimento comercial Segunda a Sexta, 9h-18h</span>
+                </div>
+            </div>
+
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 Alttabcorp - Portfólio de Projetos. Todos os direitos reservados.</p>
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Alttabcorp</h3>
+                    <p>Tecnologia, Games e Soluções Digitais</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Vertentes</h4>
+                    <ul class="footer-links">
+                        <li><a href="#gamedev">Game Development</a></li>
+                        <li><a href="#esports">Esports</a></li>
+                        <li><a href="#3d">Modelagem 3D</a></li>
+                        <li><a href="#webdev">Web Development</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Projetos</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://alttabcorp.github.io/Alttab-studio/" target="_blank">Alttab Studio →</a></li>
+                        <li><a href="https://alttabcorp.github.io/Alttab-Esports-/" target="_blank">Alttab Esports →</a></li>
+                        <li><a href="https://alttabcorp.github.io/WEB-Orcamento3D-alttab/" target="_blank">Orçamento 3D →</a></li>
+                        <li><a href="https://github.com/Alttabcorp/Documents" target="_blank">Documentação →</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Conecte-se</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://github.com/Alttabcorp" target="_blank">GitHub →</a></li>
+                        <li><a href="https://www.linkedin.com/company/alttab-corp" target="_blank">LinkedIn →</a></li>
+                        <li><a href="https://www.instagram.com/alttabcorp" target="_blank">Instagram →</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Alttabcorp. Todos os direitos reservados.</p>
+            </div>
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <!-- Scroll to Top -->
+    <div class="scroll-top">
+        <span>↑</span>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
